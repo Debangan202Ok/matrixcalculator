@@ -103,8 +103,8 @@ function Matrix() {
     <Grid container spacing={2}>
       {/* 👉 matrix input ui component */}
       <MatrixInput
-        rows={parseInt(rows, 10)}
-        columns={parseInt(columns, 10)}
+        rows={Number(rows)}
+        columns={Number(columns)}
         setRows={setRows}
         setColumns={setColumns}
         handleGenerateMatrices={handleGenerateMatrices}
