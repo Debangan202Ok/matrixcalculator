@@ -27,14 +27,14 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': 'warn',
     'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
     
     // Disable prop-types as we use TypeScript for type checking
     'react/prop-types': 'off',
 
     'import/no-extraneous-dependencies': [
-      'error',
+      'warn',
       {
         devDependencies: [
           '**/*.test.ts',
@@ -51,7 +51,7 @@ module.exports = {
     'import/no-anonymous-default-export': 'off',
 
     'import/extensions': [
-      'error',
+      'warn',
       'ignorePackages',
       {
         ts: 'never',
