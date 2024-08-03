@@ -38,7 +38,7 @@ function Matrix() {
     matrix: number[][],
     row: number,
     col: number,
-    value: string,
+    value: string | number,
   ) => {
     const numericValue = value === "" ? 0 : Number(value);
     const updatedMatrix = matrix.map((rowArr, i) =>

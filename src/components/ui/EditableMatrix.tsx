@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { TextField } from "@mui/material";
@@ -9,6 +10,8 @@ export function EditableMatrix({
   matrix,
   handleChange,
 }: MatrixProps) {
+  console.log(rows, columns);
+
   return (
     <div style={{ display: "flex", gap: "5px", flexDirection: "column" }}>
       {matrix.map((row, i) => (
