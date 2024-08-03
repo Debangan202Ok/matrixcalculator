@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Grid, TextField, Box, Alert } from "@mui/material";
 
+// 👉 Matrix Input Component
 export function MatrixInput({
   rows,
   columns,
