@@ -1,4 +1,3 @@
-/* eslint-disable no-shadow */
 import React, { useState } from "react";
 import { Button, Grid, Paper, Box, Alert, CircularProgress } from "@mui/material";
 import { MatrixInput } from "./ui/MatrixInput";
@@ -103,8 +102,8 @@ function Matrix() {
     <Grid container spacing={2}>
       {/* 👉 matrix input ui component */}
       <MatrixInput
-        rows={Number(rows)}
-        columns={Number(columns)}
+        rows={rows}
+        columns={columns}
         setRows={setRows}
         setColumns={setColumns}
         handleGenerateMatrices={handleGenerateMatrices}
