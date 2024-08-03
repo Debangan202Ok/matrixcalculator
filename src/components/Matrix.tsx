@@ -1,3 +1,7 @@
+/* eslint-disable no-restricted-globals */
+/* eslint-disable no-nested-ternary */
+/* eslint-disable no-shadow */
+/* eslint-disable no-promise-executor-return */
 import React, { useState } from "react";
 import { Button, Grid, Paper, Box, Alert, CircularProgress } from "@mui/material";
 import { MatrixInput } from "./ui/MatrixInput";
@@ -102,8 +106,8 @@ function Matrix() {
     <Grid container spacing={2}>
       {/* 👉 matrix input ui component */}
       <MatrixInput
-        rows={rows}
-        columns={columns}
+        rows={Number(rows)}
+        columns={Number(columns)}
         setRows={setRows}
         setColumns={setColumns}
         handleGenerateMatrices={handleGenerateMatrices}
