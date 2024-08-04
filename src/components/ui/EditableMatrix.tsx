@@ -4,14 +4,7 @@
 import { TextField } from "@mui/material";
 import { MatrixProps } from "../../types";
 
-export function EditableMatrix({
-  rows,
-  columns,
-  matrix,
-  handleChange,
-}: MatrixProps) {
-  console.log(rows, columns);
-
+export function EditableMatrix({ matrix, handleChange }: MatrixProps) {
   return (
     <div style={{ display: "flex", gap: "5px", flexDirection: "column" }}>
       {matrix.map((row, i) => (

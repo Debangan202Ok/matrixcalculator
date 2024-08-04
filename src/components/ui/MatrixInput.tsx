@@ -9,8 +9,8 @@ export function MatrixInput({
   setColumns,
   handleGenerateMatrices,
 }: {
-  rows: number;
-  columns: number;
+  rows: number | string;
+  columns: number | string;
   setRows: React.Dispatch<React.SetStateAction<number>>;
   setColumns: React.Dispatch<React.SetStateAction<number>>;
   handleGenerateMatrices: () => void;
@@ -18,7 +18,7 @@ export function MatrixInput({
   const [error, setError] = useState<string | null>(null);
 
   const handleGenerateClick = () => {
-    if (rows <= 0 || columns <= 0) {
+    if (Number(rows) <= 0 || Number(columns) <= 0) {
       setError("Rows and columns must be positive numbers greater than 0");
       return;
     }

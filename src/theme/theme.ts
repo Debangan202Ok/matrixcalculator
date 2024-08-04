@@ -56,6 +56,7 @@ const theme = createTheme({
           "& .MuiOutlinedInput-root": {
             boxShadow: "0px 0.5px 2px rgba(0, 0, 0, 0.2)",
             borderRadius: 8,
+            backgroundColor: "#ffffff",
           },
         },
       },
